@@ -1,13 +1,13 @@
 var circle = {
     default: 1,
     circumference: function() {
-        return (Math.PI * d);
+        return (Math.PI * 2 * this.default);
     },
     area: function() {
-        return (Math.PI * r * r);
+        return (Math.PI * this.default * this.default);
     },
     volume: function() {
-        return (4/3 * Math.PI * r * r * r);
+        return (4/3 * Math.PI * this.default * this.default * this.default);
     }
 };
 
@@ -18,7 +18,9 @@ var userInput = Number(input("Enter a number greater than 0:"));
       document.getElementById("circle").value = "";
       document.getElementById("circle").focus();
     } else {
-      this.displayCalcs();
+      circle.default = userInput;
+
+      var prompt = "Circumference:" + circle.circumference + "<br>" + "Area:" + circle.area + "<br>" + "Volume:" + volume.circumference + "<br>"
     }
 
 
