@@ -11,7 +11,7 @@ var circle = {
     }
 };
 
-var userInput = Number(input("Enter a number greater than 0:"));
+var userInput = Number(prompt("Enter a number greater than 0:"));
 
     if (userInput < 0) {
       document.getElementById("results").innerHTML = "Sorry, " + this.default + " is not a valid number.";
