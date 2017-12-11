@@ -20,8 +20,10 @@ var userInput = Number(input("Enter a number greater than 0:"));
     } else {
       circle.default = userInput;
 
-      var prompt = "Circumference:" + circle.circumference + "<br>" + "Area:" + circle.area + "<br>" + "Volume:" + volume.circumference + "<br>"
+      var prompt = "Circumference:" + circle.circumference + "<br>" + "Area:" + circle.area + "<br>" + "Volume:" + volume.circumference + "<br>";
+      document.getElementById("results").innerHTML = prompt;
     }
+
 
 
 
