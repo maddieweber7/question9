@@ -20,10 +20,9 @@ var userInput = Number(prompt("Enter a number greater than 0:"));
     } else {
       circle.default = userInput;
 
-      var prompt = "Circumference:" + circle.circumference + "<br>" + "Area:" + circle.area + "<br>" + "Volume:" + volume.circumference + "<br>";
+      var prompt = "Circumference:" + circle.circumference + "<br>" + "Area:" + circle.area + "<br>" + "Volume:" + circle.volume + "<br>";
       document.getElementById("results").innerHTML = prompt;
     }
-
-
+/* asks in form of prompt instead using the input field to ask for number. Also displays the literal function instead of calculated value... */
 
 
